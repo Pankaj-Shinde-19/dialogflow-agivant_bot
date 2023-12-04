@@ -1,0 +1,10 @@
+{
+  "name": "37761f65-1b11-4f35-bd88-7640cbea4793",
+  "displayName": "employees_data_post",
+  "genericWebService": {
+    "uri": "https://demobot-dot-support-bpdb.uc.r.appspot.com/api/employees"
+  },
+  "timeout": {
+    "seconds": 30
+  }
+}

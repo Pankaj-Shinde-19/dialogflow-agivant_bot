@@ -1,0 +1,94 @@
+{
+  "name": "c766ce73-92a7-43f0-889a-68a0b8187997",
+  "displayName": "CustomerInformation",
+  "form": {
+    "parameters": [ {
+      "displayName": "First_name",
+      "required": true,
+      "entityType": "@sys.person",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "May I know your First Name?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "Last_name",
+      "required": true,
+      "entityType": "@sys.person",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "May I know your Last Name?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "Email_id",
+      "required": true,
+      "entityType": "@sys.email",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "May I know your email-id?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "Organization_name",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "May I know your Organization Name?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "pov_number",
+      "required": true,
+      "entityType": "@sys.number-sequence",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Here is a list of different points of view (POVs):\n\n1. Accelerate Testing Efficiency with test Rigor\n2. Azure Optimization \u0026 Acceleration Framework\n3. Conversational AI with Google Dialogflow\n4. Hyper Intelligent Automation using Work Fusion\n5. Hyper personalization using Adobe AEP\n6. Platform Migration and Modernization to Cloud with Cast\n7. Platform Observability with Splunk\n8. Scalable Data Insights using Databricks\n9. Well-Architected Framework for AWS Migration\n\nPlease select the number corresponding to the point of view (POV) you wish to download." ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Fill out the details below in order to download Agivant POV's." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "webhook": "employees_data_post",
+      "tag": "employee add"
+    },
+    "targetPage": "POVs",
+    "name": "087bed4d-9b73-4dba-a4f3-7805668feab6"
+  } ]
+}

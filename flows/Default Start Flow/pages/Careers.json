@@ -1,0 +1,52 @@
+{
+  "name": "04dd05b2-d65b-4a0e-abc7-aab93b73fd34",
+  "displayName": "Careers",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "You can browse multiple job opportunities by visiting the following link:" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "https://agivant.zohorecruit.in/jobs/AgivantCareers" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Thanks for Visiting us! Any questions about Agivant POV’S or Contact us page? Yes or no?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Yes, I Have Questions",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Tell me the question that you have!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "ecd1a18a-f786-4a5c-b4e9-09a0f21c96d8"
+  }, {
+    "intent": "No, I Do not have Questions.",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thanks for connecting. Here's the Chatbot-User conversation summary: $request.generative.conversation" ]
+        },
+        "languageCode": "en"
+      } ],
+      "generators": [ {
+        "generator": "projects/support-bpdb/locations/us-central1/agents/e135e81b-7a3c-4058-8b23-338d3da5aa1d/generators/8c2d6efe-e46c-4cc8-94c5-38cb8e29f7fd",
+        "outputParameter": "$request.generative.conversation"
+      } ]
+    },
+    "name": "b5f9b5ad-bd9a-4023-ab6e-9d8df4e7efd5"
+  } ]
+}

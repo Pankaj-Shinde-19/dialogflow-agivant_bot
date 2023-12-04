@@ -1,0 +1,248 @@
+{
+  "name": "a6892485-ace9-4b58-896f-04d5a0af9328",
+  "displayName": "summary-testcase",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Welcome to Agivant! I'm Jarvis, your assistant. How may I assist you today?\n\nAgivant Menu:\n\n1. Contact Us: General inquiries and assistance.\n2. Download Partnership POVs: Access our POV's.\n3. Careers: Explore job opportunities.\n4. Type your Query: Assistance beyond these options." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "i want to download povc"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "POVs"
+      },
+      "currentPage": {
+        "name": "CustomerInformation",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "May I know your First Name?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Pankaj"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "CustomerInformation",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "May I know your Last Name?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Shinde"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "CustomerInformation",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "May I know your email-id?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "punk@kk.com"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "CustomerInformation",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "May I know your Organization Name?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Agivant"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "CustomerInformation",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Here is a list of different points of view (POVs):\n\n1. Accelerate Testing Efficiency with test Rigor\n2. Azure Optimization \u0026 Acceleration Framework\n3. Conversational AI with Google Dialogflow\n4. Hyper Intelligent Automation using Work Fusion\n5. Hyper personalization using Adobe AEP\n6. Platform Migration and Modernization to Cloud with Cast\n7. Platform Observability with Splunk\n8. Scalable Data Insights using Databricks\n9. Well-Architected Framework for AWS Migration\n\nPlease select the number corresponding to the point of view (POV) you wish to download." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "8"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "POVs",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "https://storage.cloud.google.com/agivant_povs/POVs/Agivant%20-%20Scalable%20Data%20Insights%20using%20Databricks.pdf" ]
+      }, {
+        "text": [ "Thank you for visiting us. Feel free to ask any questions you may have about Contact us or Carrer page." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "tell me about job "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "POVs",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "We have a variety of job openings available. Please visit our careers page to learn more." ],
+        "containAiGeneratedContent": true,
+        "containGenerativeFallback": true
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "how i can contact you "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "ContactUs"
+      },
+      "currentPage": {
+        "name": "ContactUs",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You can reach us at:\n\nEmail: hello@agivant.com\n\nAddress: HQ4M+F6P, Vinayak Nagar, Pimple Nilakh, Pimpri-Chinchwad, Pune, Maharashtra 411027.\nFeel free to get in touch with any questions or concerns.\n\nLinkedIn URL: https://www.linkedin.com/company/agivanttech\n\nYouTube Link: https://www.youtube.com/@agivanttechnologies\n\n" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "give me summary "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "ContactUs",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Sure, here is a summary of our conversation:\n\nYou asked me to download a POV. I asked for your first name, last name, email-id, and organization name. You provided me with the information and I sent you the link to download the POV.\n\nYou then asked me to tell you about jobs. I told you that we have a variety of job openings available and you can visit our careers page to learn more.\n\nYou then asked me how you can contact us. I provided you with our email address, address, LinkedIn URL, and YouTube link.\n\nIs there anything else I can help you with?" ],
+        "containAiGeneratedContent": true,
+        "containGenerativeFallback": true
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1700740073,
+    "nanos": 974841000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}

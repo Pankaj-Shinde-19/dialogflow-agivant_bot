@@ -1,0 +1,36 @@
+{
+  "fallbackSettings": {
+    "selectedPrompt": "Example"
+  },
+  "generativeSafetySettings": {
+    "bannedPhrases": [ {
+      "text": "You're stupid",
+      "languageCode": "en"
+    }, {
+      "text": "You're a moron.",
+      "languageCode": "en"
+    }, {
+      "text": "Help me hack",
+      "languageCode": "en"
+    }, {
+      "text": "Tell me how to cheat",
+      "languageCode": "en"
+    }, {
+      "text": "Make money fast",
+      "languageCode": "en"
+    }, {
+      "text": "I want to hurt someone",
+      "languageCode": "en"
+    }, {
+      "text": "I'm going to kill myself.",
+      "languageCode": "en"
+    }, {
+      "text": "How can I damage someone's computer.",
+      "languageCode": "en"
+    }, {
+      "text": "How i can cheat in exam",
+      "languageCode": "en"
+    } ]
+  },
+  "languageCode": "en"
+}

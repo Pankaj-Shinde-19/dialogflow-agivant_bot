@@ -1,0 +1,67 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome to Agivant! I'm Jarvis, your assistant. How may I assist you today?\n\nAgivant Menu:\n\n1. Contact Us: General inquiries and assistance.\n2. Download Partnership POVs: Access our POV's.\n3. Careers: Explore job opportunities.\n4. Type your Query: Assistance beyond these options." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "ad6cecf8-800a-4f80-83ad-9117321a72af"
+  }, {
+    "intent": "ContactUs",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "ContactUs",
+    "name": "253a7a37-757f-4a19-b8c3-813427f2efad"
+  }, {
+    "intent": "POVs",
+    "triggerFulfillment": {
+      "webhook": "employees_data_post",
+      "tag": "sdfs"
+    },
+    "targetPage": "CustomerInformation",
+    "name": "b88870b8-739b-45ed-bf1b-3e94bd8b0fa1"
+  }, {
+    "intent": "Careers",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Careers",
+    "name": "1e119e0d-f514-4d88-9608-30093b129bf3"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "I didn't get that. Can you repeat?", "Sorry, I didn't understand that. Can you please rephrase your question?" ]
+        },
+        "languageCode": "en"
+      } ],
+      "enableGenerativeFallback": true
+    },
+    "name": "46829704-e2f0-431e-adbf-fa52830b29ae"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "7825c455-f098-44c1-abaa-4b765a158d7c"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  }
+}

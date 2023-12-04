@@ -1,0 +1,42 @@
+{
+  "name": "d0fb3dbd-64fd-4fc2-b8ef-1a231258705e",
+  "displayName": "ContactUs",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "You can reach us at:\r\n\r\nEmail: hello@agivant.com\r\n\r\nAddress: HQ4M+F6P, Vinayak Nagar, Pimple Nilakh, Pimpri-Chinchwad, Pune, Maharashtra 411027.\r\nFeel free to get in touch with any questions or concerns.\r\n\r\nLinkedIn URL: https://www.linkedin.com/company/agivanttech\r\n\r\nYouTube Link: https://www.youtube.com/@agivanttechnologies\r\n\r\nThanks for dropping by! Any questions about Agivant POV’S or Careers page? Yes or no?\r\n" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Yes, I Have Questions",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Tell me the question that you have!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "29cc9614-748e-4282-93e6-eeddd1a519f2"
+  }, {
+    "intent": "No, I Do not have Questions.",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thanks for connecting. Here's the Chatbot-User conversation summary: $request.generative.conversation" ]
+        },
+        "languageCode": "en"
+      } ],
+      "generators": [ {
+        "generator": "projects/support-bpdb/locations/us-central1/agents/e135e81b-7a3c-4058-8b23-338d3da5aa1d/generators/8c2d6efe-e46c-4cc8-94c5-38cb8e29f7fd",
+        "outputParameter": "$request.generative.conversation"
+      } ]
+    },
+    "name": "cfb0bb19-799a-40ce-aea5-ad345fb3da15"
+  } ]
+}

@@ -1,0 +1,308 @@
+{
+  "name": "9b0330d9-20a4-4161-8bf2-53c037feba1f",
+  "displayName": "Summary_final",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Welcome to Agivant! I'm Jarvis, your assistant. How may I assist you today?\n\nAgivant Menu:\n\n1. Contact Us: General inquiries and assistance.\n2. Download Partnership POVs: Access our POV's.\n3. Careers: Explore job opportunities.\n4. Type your Query: Assistance beyond these options." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I want to contact you, can you please connect."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "ContactUs"
+      },
+      "currentPage": {
+        "name": "ContactUs",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You can reach us at:\r\n\r\nEmail: hello@agivant.com\r\n\r\nAddress: HQ4M+F6P, Vinayak Nagar, Pimple Nilakh, Pimpri-Chinchwad, Pune, Maharashtra 411027.\r\nFeel free to get in touch with any questions or concerns.\r\n\r\nLinkedIn URL: https://www.linkedin.com/company/agivanttech\r\n\r\nYouTube Link: https://www.youtube.com/@agivanttechnologies\r\n\r\nThanks for dropping by! Any questions about Agivant POV’S or Careers page? Yes or no?\r\n" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Yes, i have some questions to ask."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Yes, I Have Questions"
+      },
+      "currentPage": {
+        "name": "ContactUs",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Tell me the question that you have!" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Can you tell me about current job openings at agivant."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Careers"
+      },
+      "currentPage": {
+        "name": "Careers",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "You can browse multiple job opportunities by visiting the following link:" ]
+      }, {
+        "text": [ "https://agivant.zohorecruit.in/jobs/AgivantCareers" ]
+      }, {
+        "text": [ "Thanks for Visiting us! Any questions about Agivant POV’S or Contact us page? Yes or no?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Yes, i have one question."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Yes, I Have Questions"
+      },
+      "currentPage": {
+        "name": "Careers",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Tell me the question that you have!" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "How can i download agivant pov's."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "POVs"
+      },
+      "currentPage": {
+        "name": "CustomerInformation",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Fill out the details below in order to download Agivant POV's." ]
+      }, {
+        "text": [ "May I know your First Name?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Pankaj"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "CustomerInformation",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "May I know your Last Name?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Shinde"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "CustomerInformation",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "May I know your email-id?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "ps@ag.com"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "CustomerInformation",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "May I know your Organization Name?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Agivant"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "CustomerInformation",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Here is a list of different points of view (POVs):\n\n1. Accelerate Testing Efficiency with test Rigor\n2. Azure Optimization \u0026 Acceleration Framework\n3. Conversational AI with Google Dialogflow\n4. Hyper Intelligent Automation using Work Fusion\n5. Hyper personalization using Adobe AEP\n6. Platform Migration and Modernization to Cloud with Cast\n7. Platform Observability with Splunk\n8. Scalable Data Insights using Databricks\n9. Well-Architected Framework for AWS Migration\n\nPlease select the number corresponding to the point of view (POV) you wish to download." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "7"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "POVs",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "https://storage.cloud.google.com/agivant_povs/POVs/Agivant%20-%20Platform%20Observability%20with%20Splunk.pdf" ]
+      }, {
+        "text": [ "Thanks for dropping by! Feel free to ask Any questions about our Contact Us or Careers page? Yes, or no?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "No, i don't have any questions."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "No, I Do not have Questions."
+      },
+      "currentPage": {
+        "name": "TestEfficiency",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thanks for connecting. Here's the Chatbot-User conversation summary:  User asked for contact details, then asked about current job openings and finally asked how to download POV's." ],
+        "containAiGeneratedContent": true,
+        "containGeneratorsContent": true
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1701075364,
+    "nanos": 390237000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}

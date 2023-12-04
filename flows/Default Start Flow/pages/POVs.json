@@ -1,0 +1,43 @@
+{
+  "name": "9d8af767-15cc-4a44-9264-26bf1226b680",
+  "displayName": "POVs",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Thanks for dropping by! Feel free to ask Any questions about our Contact Us or Careers page? Yes, or no?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "No, I Do not have Questions.",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thanks for connecting. Here's the Chatbot-User conversation summary: $request.generative.conversation" ]
+        },
+        "languageCode": "en"
+      } ],
+      "generators": [ {
+        "generator": "projects/support-bpdb/locations/us-central1/agents/e135e81b-7a3c-4058-8b23-338d3da5aa1d/generators/8c2d6efe-e46c-4cc8-94c5-38cb8e29f7fd",
+        "outputParameter": "$request.generative.conversation"
+      } ]
+    },
+    "targetPage": "TestEfficiency",
+    "name": "b2c555bc-b558-4450-a47f-e1388cb7ea5b"
+  }, {
+    "intent": "Yes, I Have Questions",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Tell me the question that you have!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "a2b97936-2217-46e0-b3ac-d024abcc7cc7"
+  } ]
+}
